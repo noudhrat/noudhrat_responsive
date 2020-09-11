@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position: sticky</title>
+    <style>
+
+        body{
+            background-image: url(img/fleur.jpg);
+        }
+        header {
+            background: rgb(255, 214, 221);
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        
+        #conteneur {
+            background: rgb(230, 230, 250);
+            
+        }
+        footer {
+            background: hotpink;
+            padding-top: 5px;
+            padding-bottom: 10px;
+        }
+
+        nav {
+            background: rgb(255, 214, 221);
+            text-align: center;
+            height: 80px;   
+        }
+
+        .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* border: 5px solid #000; */
+    }
+
+        .col-4{
+        width: 33.333333%;
+        /* padding: 4px; */
+    }
+
+        .col-8{
+            width: 66.666666%;
+            /* padding: 4px; */
+        }
+
+      .yellow {
+        background: yellow;
+      }
+
+     a {
+         margin: 15px;
+         text-decoration: none;
+         color:black;
+     }
+
+     .violet {
+         background: rgb(224, 204, 243);
+     }
+                
+    </style>
+</head>
+<body>
+    <header>
+        <h1>sticky header</h1>
+    </header>
+
+    <nav>
+        <a href="#">menu1</a>
+        <a href="#">menu2</a>
+        <a href="#">menu3</a>
+        <a href="#">menu4</a>
+    </nav>
+
+    <div id="conteneur">
+        <section class="row">
+            <div class="col-8 violet">
+                <h2>Titre 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, cumque. Laborum, at atque? Porro, dolores? Laboriosam fuga doloribus, accusamus iste eum, deserunt modi nihil, aspernatur tempora rerum sint adipisci incidunt.</p>
+        <p>Maxime error maiores quas pariatur id inventore ratione fugit cumque eius recusandae, iste molestiae eaque culpa numquam minima exercitationem ad quasi accusamus, nesciunt, laborum aut esse sint! Corporis, quod eum!</p>
+        <p>Quae magni nobis veritatis vitae praesentium? Culpa optio blanditiis, dolorum natus provident perspiciatis ratione perferendis obcaecati, amet consectetur nemo fuga dignissimos quisquam laboriosam ipsam quasi laborum soluta libero deserunt magni.</p>
+        <p>Nemo suscipit dolore maxime? Ipsa omnis fugiat non. Dicta mollitia excepturi at ut porro officiis asperiores nostrum repellendus. Incidunt reprehenderit repellendus veniam eius. Doloribus incidunt nam sed, eveniet sint rerum?</p>
+        </div>
+
+        <div class="col-4">
+            <h2>Titre2</h2>
+            <p>Laboriosam eos nisi eum quae quibusdam, dignissimos inventore quasi porro id animi voluptatem quis excepturi libero exercitationem maxime provident vitae possimus nemo fugiat reiciendis unde. Nulla iusto tempora quas obcaecati.</p>
+            <p>Quasi in eos vitae. Accusantium eius, totam, quidem, porro ullam voluptates quod dolorum soluta dolores quam temporibus ipsa nesciunt molestias. Incidunt ut, omnis voluptatum voluptate accusamus nemo et similique suscipit.</p>
+            <p>A debitis unde rerum maiores, quam possimus consequatur perspiciatis? Maxime expedita optio qui provident magni fugit? Voluptates sint molestias, nesciunt cupiditate consequatur aspernatur, alias quam recusandae, quibusdam deserunt at blanditiis?</p>
+        </div>
+
+        <div class="col-4 yellow">
+            <h2>Titre2</h2>
+            <p>Enim, ipsam eaque. Reiciendis nisi perspiciatis illo unde, omnis debitis repellendus laudantium, aliquid numquam officiis tenetur ab nulla ad distinctio ex minima, repellat sed dignissimos incidunt blanditiis repudiandae cupiditate quia!</p>
+            <p>Autem, veniam molestias enim eaque, delectus nulla, tempora dicta corrupti alias placeat itaque explicabo deleniti accusantium exercitationem aut ut. Beatae impedit repudiandae voluptas animi enim facilis laudantium, placeat recusandae asperiores!</p>
+            <p>Similique eius vitae voluptate architecto temporibus dolor ullam excepturi exercitationem perspiciatis! Doloribus quo rem ut, maiores adipisci ad id necessitatibus vero ea expedita officia dolore explicabo minus veritatis deserunt tempora!</p>
+        </div>
+
+        <div class="col-4">
+            <h2>Titre1</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis reiciendis numquam harum iure quisquam! Reprehenderit eligendi maxime dicta vitae harum eaque exercitationem quisquam perspiciatis fuga enim asperiores, id optio alias?</p>
+            <p>Ratione quam facere, blanditiis perferendis nobis similique exercitationem alias cumque magni delectus est, ducimus eos assumenda officia explicabo quidem consectetur ex deleniti voluptas qui! Natus tempora nobis eius ipsam dolor.</p>
+            <p>Fuga id, pariatur atque porro nihil repudiandae soluta fugiat odit consectetur iusto officia, nulla optio? At ipsa voluptatem tempora incidunt, velit omnis obcaecati, rem culpa nisi assumenda illum minima iure.</p>
+            <p>Qui quas veritatis impedit maxime reiciendis non, repellendus consequatur debitis accusantium sequi tempore nulla enim quasi ad quo ut soluta quidem in harum est dolorum atque veniam beatae! Excepturi, amet?</p>
+            <p>Quibusdam dolor sint eligendi praesentium id quo incidunt quae a eos? Odio, ex incidunt cumque exercitationem soluta non, rem distinctio nostrum magnam impedit cupiditate blanditiis ipsum provident libero nihil ducimus?</p>
+        </div>
+        <div class="col-4 yellow">
+            <h2>titre1</h2>
+            <p>Hic pariatur placeat exercitationem officia delectus incidunt! Amet earum nesciunt fugiat facilis pariatur dicta itaque odio impedit rem ratione sunt, dolorem molestiae voluptatibus quo expedita maxime autem veritatis iusto ad?</p>
+            <p>Voluptate, libero. Ullam debitis alias fugiat doloremque nobis. Quisquam voluptatem repellendus distinctio, eaque blanditiis ut ad ratione, labore ipsam dolore optio nesciunt, iste quaerat nisi fugiat vel quia ducimus eligendi?</p>
+            <p>Dicta corporis voluptatibus enim amet quos ex illum qui esse recusandae accusamus velit tempore adipisci, rem inventore alias doloribus unde quisquam, tenetur id laudantium, nam possimus ipsa! Autem, nostrum maiores.</p>
+            <p>Inventore, soluta libero. Ducimus nostrum pariatur, laboriosam est quidem laborum sapiente assumenda! Pariatur, autem! Eaque id cupiditate fugit, eos a molestias illum magnam nesciunt natus ullam laboriosam, eligendi quis! Consectetur?</p>
+            <p>Expedita voluptas, tenetur ut, dolor quis eos ea animi odio saepe reiciendis voluptatum repellat, rem veritatis magnam sunt at! Temporibus voluptatem illum magni officia, illo reprehenderit. Illo, porro dicta. Molestiae.</p>
+        </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis saepe consequuntur quae debitis error ducimus officia temporibus placeat a ipsa et ex nihil sunt sequi illo rem cum, asperiores atque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat repellendus architecto eos distinctio ducimus sint qui, vitae iure? Consequatur quisquam nisi voluptatem beatae, blanditiis adipisci harum vel porro eum cumque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima debitis, dignissimos quo eius harum optio tempore quisquam est, assumenda ipsa vel. Quisquam atque alias perferendis similique mollitia! Sapiente, cum magni.</p>
+    </footer>
+
+</body>
+</html>
+
+
+

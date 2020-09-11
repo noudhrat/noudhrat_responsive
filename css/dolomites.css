@@ -1,19 +1,33 @@
 body {
-    background: rgb(255, 228, 233);
+   background: #fff;
+    font-family: 'Raleway', sans-serif;
 }
-
+/* conteneur principal */
 .conteneur {
     margin: 0 auto;
-    background: white;
+    
     width: 1000px;
     display: flex;
     flex-direction: column;
-    min-height: 100vh
+    min-height: 100vh;
+    text-align: center;
 }
-/* main flex 1 footer flex shrink et min height pour le sticky footer */
+/*  */
 main{
     flex: 1;
 }
+/* pour la navigation du haut */
+nav{
+    height: 80px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+/* pour séparer */
+#menu {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 footer {
     flex-shrink: 0;
 }
@@ -23,6 +37,9 @@ footer {
     text-align: center;
 }
 
+.bleu {
+    background: rgb(197, 230, 230);
+}
 
 .row{
     display: flex;
@@ -129,4 +146,112 @@ footer {
 }
 .marge-11 {
     margin-left: 91.666666%;
+}
+
+/* les règles de médias queries pour le responsive et les différents écrans */
+
+/* pour les telephones */
+
+@media (max-width: 320px) {
+    body {
+        background: #ffffff;
+
+    }
+    .conteneur{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background: rgb(255, 255, 0);
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border: 5px solid #000;
+    }
+    .col-xs-12{
+        width: 100%;
+    }
+    .colonne-xs {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* footer */
+
+
+/* pour les petites les tablettes */
+
+
+@media (min-width: 321px) and (max-width: 767px) {
+    body {
+        background:#fff;
+    }
+
+    .conteneur {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background: rgb(255, 140, 255);
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border: 5px solid #000;
+    }
+
+    .col-sm-12 {
+        width: 100%;
+
+    }
+
+    .col-sm-6 {
+        width: 50%;
+    }
+
+    /* pour le footer */
+    .colonne-sm {
+    display: flex;
+    flex-direction: column;
+} 
+
+}
+
+/* les tablettes et certain ordi portable */
+@media (min-width: 768px) and (max-width: 1096px) {
+    
+    body {
+        background: #fff;
+    }
+    .conteneur {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background: lightblue;
+        
+    }
+}
+
+/* écran ordianteurs de bureau, tout les écrans plus grd que 1097 */
+
+@media (min-width: 1097px) {
+
+   body {
+       background: #fff;
+   }
+
+    .conteneur {
+
+        width: 1200px;
+        margin: 0 auto;
+        border: 1px solid black;
+        background: lightsalmon;
+        
+    }
+
+
+    
 }
